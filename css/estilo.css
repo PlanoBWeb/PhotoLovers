@@ -1,0 +1,250 @@
+/* Folha de estilo */
+@font-face {
+    font-family: 'Lobster-Regular';
+    src: url('../fonts/LobsterTwo-Regular.ttf');
+}
+@font-face {
+    font-family: 'DIN-Regular';
+    src: url('../fonts/DIN-Regular.ttf');
+}
+/* Reset */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+body {
+    line-height:1;
+}
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+nav ul {
+    list-style:none;
+}
+blockquote, q {
+    quotes:none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+/* Classes default  */
+.pd-none{ padding: 0px !important; }
+.mg-none{ margin: 0px !important; }
+.container-default
+{
+    width:      100%;
+    height:     auto;
+    display:    table;
+    position:   relative;
+    margin:     auto;
+}
+.img-fundo{ position: relative; max-width: 100%; height: 100%; }
+.bloco-conteudo-abs
+{
+    width:      100%;
+    height:     auto;
+    /*position:   absolute;*/
+    position:   relative;
+    height:     auto;
+    top:        0px;
+}
+.bloco-conteudo
+{
+    width:      100%;
+    max-width:  855px;
+    height:     auto;
+    position:   relative;
+    display:    table;
+    margin:     auto;
+}
+.mold-lf-tp{ position: absolute; left: 0px; top: 0px; }
+.mold-rgt-tp{ position: absolute; right: 0px; top: 0px; }
+.mold-lf-bt{ position: absolute; left: 0px; bottom: 0px; }
+.mold-rgt-bt{ position: absolute; right: 0px; bottom: 0px; }
+/*.row{ margin: 0px !important; }*/
+/* Classes default  */
+.navbar-default{ 
+    background-color:   transparent !important;
+    border-color:       transparent !important;
+    height:             95px !important;
+    border:             0px solid transparent !important;
+}
+.bg-menu{ 
+    width:              100%;
+    height:             100%;
+    background-color:   #fff;
+    opacity:            0.9; 
+    display:            table;
+    position:           absolute;
+}
+.navbar-nav
+{
+    display:        table;
+    float:          none !important;
+    margin:         auto !important;
+}
+.img-logo
+{
+    padding: 0px 40px;
+}
+.link-menu-top 
+{ 
+    color:              #424043 !important; 
+    text-decoration:    none; 
+    font-family:        'Lobster-Regular';
+    font-size:          17px !important; 
+    padding-top:        44px !important; 
+    padding-left:       7px !important;
+    padding-right:      7px !important;
+}
+.link-menu-top:hover{ color: #eb008b !important; text-decoration: none; }
+header
+{
+    position:   fixed;
+    width:      100%;
+    z-index:    99;
+}
+.bloco-titulo-principal
+{
+    max-width:  500px;
+    max-height: 200px;
+    height:     auto;
+    display:    table;
+    margin:     auto;
+    /*background: #fff;*/
+    position: relative;
+}
+.titulo-principal
+{
+    text-align: center;
+    padding:    40px 35px;
+}
+.titulo-principal-home
+{
+    font-size:  40px;
+    color:      #fff;
+    display:    table;
+    font-family: 'DIN-Regular';
+}
+.bloco-titulo-principal-home{ margin-top: 277px; max-width: 480px; }
+.titulo-principal-sobre
+{
+    color:          #414042;
+    font-family:    'Lobster-Regular';
+    padding:        20px 30px;
+    margin:         0px;
+    font-size:      2.4em;
+}
+.bloco-titulo-principal-sobre{ margin-top: 40px; }
+.txt-sobre-nos
+{
+    color: #414042;
+    font-size: 1em;
+    font-family: 'DIN-Regular';
+}
+.frase-sobre-nos
+{
+    color: #b10069;
+    font-size: 1.25em;
+    font-family:    'Lobster-Regular';
+}
+.icones-sobre-nos
+{
+    height:         34px;
+    display:        table;
+    float:          left;
+    padding:        0px 28px;
+    margin-bottom:  6px;
+}
+
+.bgParallax {
+    
+    margin: 0 auto;
+    width: 100%;
+    /*max-width: 1920px;*/
+    position: relative;
+    min-height: 100%;
+
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.img-fundo-home
+{
+    height: 641px;
+    background-image: url(../img/inove-o-seu-evento.jpg);
+}
+.img-fundo-sobre-nos
+{
+    background-image: url(../img/sobre-nos.jpg);
+}
+
+
+
+
+
+
+
+
+
+
+@media all and (max-width: 768px) {
+    .mg-none-mob{ margin: 0px !important; }
+    .bg-menu{ background-color: transparent !important; }
+    .navbar-default {
+        background-color: #f8f8f8 !important;
+        opacity: 1;
+    }
+    .img-logo {
+        padding:    0px 0px;
+        max-width:  180px;
+    }
+    .navbar-toggle{ margin-top: 28px !important; }
+    .bg-menu-mob{ background-color: #fff;    /* height: 100%;*/ }
+    .navbar-collapse{ border-color: transparent !important; }
+    .img-fundo{ max-height: 100%; height: auto; }
+    .mold-lf-tp{ max-width: 30px; }
+    .mold-rgt-tp{ max-width: 30px; }
+    .mold-lf-bt{ max-width: 30px; }
+    .mold-rgt-bt{ max-width: 30px; }
+    .titulo-principal-home{ font-size: 25px;  padding: 20px 35px; }
+    .bloco-titulo-principal-home { margin-top: 147px; max-width: 320px;}
+    .img-fundo-home{ margin-top: 100px; min-height: 190px; }
+    .icones-sobre-nos{ float: none; display: table; margin: auto; margin-bottom: 15px; }
+    .bloco-sobre-nos-mob{ padding: 0px 15px; margin-bottom: 30px; } 
+}
+
+@media all  and (min-width: 768px) and (max-width: 920px) {
+    .img-logo{ max-width:  310px !important; padding: 0px 20px;}
+    .link-menu-top{ padding-left: 4px !important; padding-right: 4px !important; }
+    .img-fundo-home{ max-height: 400px; }
+    .bloco-sobre-nos-mob{ padding: 0px 15px; } 
+}
