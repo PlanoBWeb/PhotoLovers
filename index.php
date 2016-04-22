@@ -135,21 +135,12 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/wow-funcao.js"></script>
     <script>
-        // var p = $( "#rodape" );
-
-        // ><a href="#sobre-nos" class="link-menu-top">sobre nós</a></li>
-        //             <li><a href="#produtos" class="link-menu-top">produtos</a></li>
-        //             <li><a href="#diferenciais" class="link-menu-top">diferenciais</a></li>
-        //             <li><a href="#home" class="pd-none hidden-xs"><img class="img-logo" src="img/Photo-Like-Santos.png" alt="Photo Like Santos"></a></li>
-        //             <li><a href="#clientes" class="link-menu-top">clientes</a></li>
-        //             <li><a href="#galeria" class="link-menu-top">galeria</a></li>
-        //             <li><a href="#orcamento" class="link-menu-top">orçamento</a></li>
-
-
         $('.navbar-nav a').click(function() {
 
             event.preventDefault();
             var pagina = $(this).attr("href");
+
+            window.history.pushState("teste", "Title", pagina);
            
            switch(pagina){
                 case '#sobre-nos': var p = $(pagina).offset().top;
@@ -174,26 +165,6 @@
             }, 1800);
 
         });
-        
-        // $('#').click(function(){
-        //     var p = $('#diferenciais').offset().top;
-        //     var total = p -  ('+150');
-        // });
-
-        // var p = $('#diferenciais').offset().top;
-        // var total = p -  ('+150');
-        // $('.link-menu-top').click(function(){
-
-
-        //     $('html, body').animate({
-        //         scrollTop: total
-        //     }, 1800);
-
-
-
-        // });
-        //$( "p:last" ).text( "scrollTop:" + p.scrollTop() );
-        //alert(p.scrollTop());
 
         $('.bgParallax').each(function(){
             var $obj = $(this);

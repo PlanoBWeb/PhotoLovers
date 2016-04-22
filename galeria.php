@@ -6,7 +6,7 @@
     <img class="pull-left mold-lf-bt" src="img/moldura-sobre-nos-lf-bt.png" alt="INOVE O SEU EVENTO">
 </div>
 <div class="row mg-none pd-tp-30 wow bounceInUp" data-wow-duration="2s">
-	<div class="col-xs-12 col-sm-4 col-md-4">
+	<div class="col-xs-12 col-sm-4 col-md-4 mg-bt-40-mob">
 		<a href="" target="_blank">
 			<div class="moldura-foto">
 				<img src="img/img-galeria.jpg" alt="Casal">
@@ -16,7 +16,7 @@
 			<p class="txt-galeria"><a href="" target="_blank">Casamento Alice e Mauro 17.10.15</a></p>
 		</div>
 	</div>	
-	<div class="col-xs-12 col-sm-4 col-md-4 img-galeria-meio">
+	<div class="col-xs-12 col-sm-4 col-md-4 mg-bt-40-mob img-galeria-meio">
 		<a href="" target="_blank">
 			<div class="moldura-foto">
 				<img src="img/img-galeria.jpg" alt="Casal">
@@ -26,7 +26,7 @@
 			<p class="txt-galeria"><a href="" target="_blank">Casamento Alice e Mauro 17.10.15</a></p>
 		</div>
 	</div>	
-	<div class="col-xs-12 col-sm-4 col-md-4">
+	<div class="col-xs-12 col-sm-4 col-md-4 mg-bt-40-mob">
 		<a href="" target="_blank">
 			<div class="moldura-foto">
 				<img src="img/img-galeria.jpg" alt="Casal">
