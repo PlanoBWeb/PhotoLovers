@@ -1,9 +1,9 @@
 <div class="bloco-titulo-principal bloco-titulo-principal-sobre">
-    <img class="pull-left mold-lf-tp borda-peq" src="img/moldura-lf-tp.png" alt="INOVE O SEU EVENTO">
-    <img class="pull-right mold-rgt-tp borda-peq" src="img/moldura-rgt-tp.png" alt="INOVE O SEU EVENTO">
+    <img class="pull-left mold-lf-tp borda-peq" src="img/moldura-lf-tp.png" alt="diferenciais" title="diferenciais">
+    <img class="pull-right mold-rgt-tp borda-peq" src="img/moldura-rgt-tp.png" alt="diferenciais" title="diferenciais">
     <h2 class="titulo-principal titulo-principal-sobre titulo-principal-produtos pull-left">diferenciais</h2>
-    <img class="pull-right mold-rgt-bt borda-peq" src="img/moldura-rgt-bt.png" alt="INOVE O SEU EVENTO">
-    <img class="pull-left mold-lf-bt borda-peq" src="img/moldura-lf-bt.png" alt="INOVE O SEU EVENTO">
+    <img class="pull-right mold-rgt-bt borda-peq" src="img/moldura-rgt-bt.png" alt="diferenciais" title="diferenciais">
+    <img class="pull-left mold-lf-bt borda-peq" src="img/moldura-lf-bt.png" alt="diferenciais" title="diferenciais">
 </div>
 <div class="hidden-xs">
 	<div class="row mg-none-mob pd-tp-30">
@@ -14,12 +14,12 @@
 			</div>
 			<div class="col-xs-12 col-sm-1 col-md-1 pd-none"></div>
 			<div class="col-xs-12 col-sm-3 col-md-3 pd-none">
-				<img class="center-mob" src="img/seguranca-e-assistencia.png" alt="SEGURANÇA E ASSISTÊNCIA">
+				<img class="center-mob" src="img/seguranca-e-assistencia.png" alt="SEGURANÇA E ASSISTÊNCIA" title="SEGURANÇA E ASSISTÊNCIA">
 			</div>
 		</div>
 		<div class="col-xs-12 col-sm-6 col-md-6 mg-bt-40-mob wow bounceInRight" data-wow-duration="1s">
 			<div class="col-xs-12 col-sm-3 col-md-3 pd-none">
-				<img class="center-mob" src="img/flexibilidade.png" alt="FLEXIBILIDADE">
+				<img class="center-mob" src="img/flexibilidade.png" alt="FLEXIBILIDADE" title="FLEXIBILIDADE">
 			</div>
 			<div class="col-xs-12 col-sm-1 col-md-1 pd-none"></div>
 			<div class="col-xs-12 col-sm-8 col-md-8 pd-none">
@@ -36,12 +36,12 @@
 			</div>
 			<div class="col-xs-12 col-sm-1 col-md-1 pd-none"></div>
 			<div class="col-xs-12 col-sm-3 col-md-3 pd-none">
-				<img class="center-mob" src="img/praticidade.png" alt="PRATICIDADE">
+				<img class="center-mob" src="img/praticidade.png" alt="PRATICIDADE" title="PRATICIDADE">
 			</div>
 		</div>
 		<div class="col-xs-12 col-sm-6 col-md-6 mg-bt-40-mob wow bounceInRight" data-wow-duration="1s">
 			<div class="col-xs-12 col-sm-3 col-md-3 pd-none">
-				<img class="center-mob" src="img/equipamentos.png" alt="EQUIPAMENTOS">
+				<img class="center-mob" src="img/equipamentos.png" alt="EQUIPAMENTOS" title="EQUIPAMENTOS">
 			</div>
 			<div class="col-xs-12 col-sm-1 col-md-1 pd-none"></div>
 			<div class="col-xs-12 col-sm-8 col-md-8 pd-none">
@@ -58,12 +58,12 @@
 			</div>
 			<div class="col-xs-12 col-sm-1 col-md-1 pd-none"></div>
 			<div class="col-xs-12 col-sm-3 col-md-3 pd-none">
-				<img class="center-mob" src="img/moldura-personalizada.png" alt="MOLDURA PERSONALIZADA">
+				<img class="center-mob" src="img/moldura-personalizada.png" alt="MOLDURA PERSONALIZADA" title="MOLDURA PERSONALIZADA">
 			</div>
 		</div>
 		<div class="col-xs-12 col-sm-6 col-md-6 mg-bt-40-mob wow bounceInRight" data-wow-duration="1s">
 			<div class="col-xs-12 col-sm-3 col-md-3 pd-none">
-				<img class="center-mob" src="img/aderecos.png" alt="">
+				<img class="center-mob" src="img/aderecos.png" alt="adereços" title="adereços">
 			</div>
 			<div class="col-xs-12 col-sm-1 col-md-1 pd-none"></div>
 			<div class="col-xs-12 col-sm-8 col-md-8 pd-none">
@@ -77,7 +77,7 @@
 	<div class="row mg-none-mob pd-tp-30">
 		<div class="col-xs-12 col-sm-6 col-md-6 mg-bt-40-mob">
 			<div class="col-xs-12 col-sm-3 col-md-3 pd-none">
-				<img class="center-mob" src="img/seguranca-e-assistencia.png" alt="SEGURANÇA E ASSISTÊNCIA">
+				<img class="center-mob" src="img/seguranca-e-assistencia.png" alt="SEGURANÇA E ASSISTÊNCIA" title="SEGURANÇA E ASSISTÊNCIA">
 			</div>
 			<div class="col-xs-12 col-sm-1 col-md-1 pd-none"></div>
 			<div class="col-xs-12 col-sm-8 col-md-8 pd-none">
@@ -87,7 +87,7 @@
 		</div>
 		<div class="col-xs-12 col-sm-6 col-md-6 mg-bt-40-mob">
 			<div class="col-xs-12 col-sm-3 col-md-3 pd-none">
-				<img class="center-mob" src="img/flexibilidade.png" alt="FLEXIBILIDADE">
+				<img class="center-mob" src="img/flexibilidade.png" alt="FLEXIBILIDADE" title="FLEXIBILIDADE">
 			</div>
 			<div class="col-xs-12 col-sm-1 col-md-1 pd-none"></div>
 			<div class="col-xs-12 col-sm-8 col-md-8 pd-none">
@@ -99,7 +99,7 @@
 	<div class="row mg-none-mob">
 		<div class="col-xs-12 col-sm-6 col-md-6 mg-bt-40-mob">
 			<div class="col-xs-12 col-sm-3 col-md-3 pd-none">
-				<img class="center-mob" src="img/praticidade.png" alt="PRATICIDADE">
+				<img class="center-mob" src="img/praticidade.png" alt="PRATICIDADE" title="PRATICIDADE">
 			</div>
 			<div class="col-xs-12 col-sm-1 col-md-1 pd-none"></div>
 			<div class="col-xs-12 col-sm-8 col-md-8 pd-none">
@@ -110,7 +110,7 @@
 		</div>
 		<div class="col-xs-12 col-sm-6 col-md-6 mg-bt-40-mob">
 			<div class="col-xs-12 col-sm-3 col-md-3 pd-none">
-				<img class="center-mob" src="img/equipamentos.png" alt="EQUIPAMENTOS">
+				<img class="center-mob" src="img/equipamentos.png" alt="EQUIPAMENTOS" title="EQUIPAMENTOS">
 			</div>
 			<div class="col-xs-12 col-sm-1 col-md-1 pd-none"></div>
 			<div class="col-xs-12 col-sm-8 col-md-8 pd-none">
@@ -122,7 +122,7 @@
 	<div class="row mg-none-mob">
 		<div class="col-xs-12 col-sm-6 col-md-6 mg-bt-40-mob">
 			<div class="col-xs-12 col-sm-3 col-md-3 pd-none">
-				<img class="center-mob" src="img/moldura-personalizada.png" alt="MOLDURA PERSONALIZADA">
+				<img class="center-mob" src="img/moldura-personalizada.png" alt="MOLDURA PERSONALIZADA" title="MOLDURA PERSONALIZADA">
 			</div>
 			<div class="col-xs-12 col-sm-1 col-md-1 pd-none"></div>
 			<div class="col-xs-12 col-sm-8 col-md-8 pd-none">
@@ -132,7 +132,7 @@
 		</div>
 		<div class="col-xs-12 col-sm-6 col-md-6 mg-bt-40-mob">
 			<div class="col-xs-12 col-sm-3 col-md-3 pd-none">
-				<img class="center-mob" src="img/aderecos.png" alt="">
+				<img class="center-mob" src="img/aderecos.png" alt="ADEREÇOS" title="ADEREÇOS">
 			</div>
 			<div class="col-xs-12 col-sm-1 col-md-1 pd-none"></div>
 			<div class="col-xs-12 col-sm-8 col-md-8 pd-none">

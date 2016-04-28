@@ -4,12 +4,14 @@
     src: url('../fonts/LobsterTwo-Regular.ttf');
 }
 @font-face {
-    font-family: 'DIN-Regular';
-    src: url('../fonts/DIN-Regular.ttf');
-}
-@font-face {
     font-family: 'Lovelt';
     src: url('../fonts/Lovelt.ttf');
+}
+@font-face {
+    font-family: 'DIN-Regular';
+    src: url('../fonts/DIN-Regular.otf');
+/*    font-weight: normal;
+    font-style: normal;*/
 }
 /* Reset */
 html, body, div, span, object, iframe,
@@ -95,6 +97,8 @@ img{ max-width: 100%; }
 .mold-rgt-bt{ position: absolute; right: 0px; bottom: 0px; }
 .pd-tp-30{ padding-top: 30px; }
 .pd-lf-30{ padding-left: 30px !important; }
+.mg-tp-none{margin-top: 0px !important; } 
+.mg-tp-cabine-depoimento{ margin-top: 13% !important;  }
 /*.row{ margin: 0px !important; }*/
 /* Classes default  */
 .navbar-default{ 
@@ -121,7 +125,7 @@ img{ max-width: 100%; }
 {
     padding: 0px 40px;
 }
-.link-menu-top 
+.link-menu-top  
 { 
     color:              #424043 !important; 
     text-decoration:    none; 
@@ -130,6 +134,9 @@ img{ max-width: 100%; }
     padding-top:        44px !important; 
     padding-left:       7px !important;
     padding-right:      7px !important;
+    border:             0px !important;
+    float:              none !important;
+    text-align:         center;
 }
 .link-menu-top:hover{ color: #eb008b !important; text-decoration: none; }
 header
@@ -145,18 +152,19 @@ header
     height:     auto;
     display:    table;
     margin:     auto;
-    /*background: #fff;*/
-    position: relative;
+    position:   relative;
 }
 .titulo-principal
 {
     text-align: center;
     padding:    40px 35px;
+    position:   relative;
 }
 .titulo-principal-home
 {
+    /*font-size:  10px;*/
     font-size:  40px;
-    color:      #fff;
+    color:      #fff !important;
     display:    table;
     font-family: 'DIN-Regular';
 }
@@ -202,19 +210,105 @@ header
     background-attachment:  fixed;
     background-size:        cover;
 }
-.img-fundo-home{ background-image:   url(../img/inove-o-seu-evento.jpg);}
-.img-fundo-sobre-nos{ background-image: url(../img/sobre-nos.jpg); }
+/*.img-fundo-home{ background-image:   url(../img/inove-o-seu-evento.jpg);}*/
+/*.img-fundo-sobre-nos{ background-image: url(../img/sobre-nos.jpg); }*/
 .img-fundo-produtos
 { 
-    background-image: url(../img/produtos.jpg); 
+    /*background-image: url(../img/produtos.jpg); */
     background-repeat:      no-repeat;
     background-attachment:  fixed;
     background-size:        cover;
     padding-bottom:         30px;
 }
+.img-fundo-produto-espelho
+{ 
+    background-image: url(../img/espelho-magico-fundo.jpg); 
+}   
+.img-fundo-produto-likesantos
+{
+    background-image: url(../img/photo-like-santos-fundo.jpg); 
+}
+.img-fundo-produto-depoimento
+{
+    background-image: url(../img/cabine-depoimento.jpg); 
+}
+.img-fundo-produto-photogram
+{
+    background-image: url(../img/photogram.jpg); 
+}
+.img-fundo-produto-videocrazy
+{
+    background-image: url(../img/videocrazy.jpg); 
+}
+.container-default-produtos
+{
+    left: 100%;
+    top: 0px;
+    position: absolute;
+    display: block !important;
+    height: 100%;
+    background-repeat:      no-repeat;
+    background-attachment:  fixed;
+    background-size:        cover;
+    padding-bottom:         30px;
+    background-position:    50% 0;
+}
+.bloco-logo-img-produto
+{
+    display: table;
+    position: relative;
+    border: 1px solid #fff;
+    width: 96%;
+    height: auto;
+    margin-top: 40px;
+    margin-bottom: 5px;
+}
+.bloco-txt-produto-left
+{
+    width: 96%;
+    height: auto;
+    position: relative;
+    background-color: #fff;
+    padding: 2%;
+    opacity: 0.8;
+}
+.titulo-bloco-produto
+{
+    font-family: 'DIN-Regular';
+    font-size: 17px;
+    color: #414042;
+    text-align: left;
+    font-weight: bold;
+}
+.txt-bloco-produto
+{
+    font-family: 'DIN-Regular';
+    font-size: 13px;
+    color: #414042;
+    text-align: left;
+    margin: 0px !important;
+}
+.txt-bloco-produto span{ color: #1ea5dd; }
+.span-rosa{ color: #e51a8a !important; }
+.voltar-tela-default
+{
+    color: #1ea5dd;
+    font-family: 'DIN-Regular';
+    font-size: 13px;
+    font-weight: bold;
+    text-align: right;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.img-logo-produto
+{
+    display: table;
+    margin: auto;
+    padding: 15px 0px;
+}
 .titulo-principal-produtos{ color: #fff; }
 .borda-peq{ max-width: 20px; }
-.p-link-produto{ text-align: center; padding-top: 10px; }
+.p-link-produto{ text-align: center; padding-top: 10px; font-size: 1em !important;  margin-top: 0px; }
 .link-produto
 {
     font-family:        'DIN-Regular';
@@ -227,7 +321,7 @@ header
 .link-produto:hover
 {
     text-decoration:    none;
-    color:              #fff;   
+    color:              #fff;  
 }
 .bloco-produtos{ padding-top: 43px; }
 .pd-bt-5{ padding-bottom: 6px; }
@@ -298,7 +392,7 @@ filter: FlipV;
 .titulo-principal-clientes{ color: #8a8c8e; }
 .img-fundo-galeria
 {
-    background-image: url(../img/galeria.jpg); 
+    /*background-image: url(../img/galeria.jpg); */
     background-repeat:      no-repeat;
     background-size:        cover;
     padding-bottom:         30px;
@@ -343,7 +437,7 @@ filter: FlipV;
 }
 .img-fundo-orcamento
 {
-    background-image: url(../img/orcamento.jpg); 
+    /*background-image: url(../img/orcamento.jpg); */
     background-repeat:      no-repeat;
     background-size:        cover;
     padding-bottom:         30px;
@@ -360,18 +454,25 @@ filter: FlipV;
 /*Formulario*/
 .field-default
 {
-    border: 1px solid #fff;
-    background-color: transparent;
+    border: 1px solid #fff !important;
+    background-color: transparent !important;
     width: 100%;
-    padding: 0px 15px;
+    /*padding: 0px 15px;*/
+    padding: 4px 15px;
     height: 30px;
     margin-bottom: 7px;
-    color: #fff;
+    color: #fff !important;
     font-family: 'DIN-Regular';
+    border-radius: 0px !important;
+}
+.field-default-select
+{
+    background-color: #06070C !important;
+    opacity: 0.8;
 }
 .field-default-half
 {
-    width: 99%;
+    width: 99% !important;
 }
 .form-default textarea{ height: 120px; }
 .form-default input[type = "submit"]{
@@ -408,7 +509,7 @@ filter: FlipV;
 /*Formulario*/
 .img-fundo-rodape
 {
-    background-image: url(../img/rodape.jpg); 
+    /*background-image: url(../img/rodape.jpg); */
     background-repeat:      no-repeat;
     background-size:        cover;
     padding-bottom:         30px;
@@ -425,6 +526,7 @@ filter: FlipV;
 .link-icones-rodape:hover{ color: #b10069; text-decoration: none; }
 .bloco-contato-footer div
 {
+    margin: 10px 0px !important;
     margin-bottom: 10px;
 }
 .bloco-contato-footer{ padding-left: 90px !important; padding-top: 20px !important; }
@@ -455,8 +557,50 @@ filter: FlipV;
     padding: 35px 0px 40px 0px;
     margin: 0px;
 }
-
-
+.owl-pagination
+{
+    display: none !important;
+}
+#bloco-form-orcamento2
+{
+    width: 100%;
+    padding: 15px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    display: none;
+    margin-bottom: 20px;
+    font-family:        'DIN-Regular';
+    font-size:          1em;
+    color:              #fff;
+    text-align:         center;
+    text-transform:     uppercase;
+}
+.txt-ok-form
+{
+    font-family:        'DIN-Regular';
+    font-size:          1em;
+    color:              #fff;
+    text-align:         center;
+    margin: 0px;
+    padding: 0px;
+    text-transform:     uppercase;
+}
+.testeaparece
+{
+    width: 100%;
+    padding: 15px;
+    background-color: transparent;
+    border: 1px solid red;
+    border-radius: 5px;
+    display: none;
+    margin-bottom: 20px;
+    font-family:        'DIN-Regular';
+    font-size:          1em;
+    color:              red;
+    text-align:         center;
+    text-transform:     uppercase;
+}
 
 
 
@@ -471,6 +615,7 @@ filter: FlipV;
     .navbar-default {
         background-color: #f8f8f8 !important;
         opacity: 1;
+        margin-bottom: 0px !important;
     }
     .img-logo {
         padding:    0px 0px;
@@ -484,9 +629,18 @@ filter: FlipV;
     .mold-rgt-tp{ max-width: 30px; }
     .mold-lf-bt{ max-width: 30px; }
     .mold-rgt-bt{ max-width: 30px; }
-    .titulo-principal-home{ font-size: 25px;  padding: 20px 35px; }
-    .bloco-titulo-principal-home { margin-top: 147px; max-width: 320px;}
-    .img-fundo-home{ margin-top: 100px; min-height: 380px; }
+
+    #owl-demo-index-mob .mold-lf-tp{ max-width: 20px; }
+    #owl-demo-index-mob .mold-rgt-tp{ max-width: 20px; }
+    #owl-demo-index-mob .mold-lf-bt{ max-width: 20px; }
+    #owl-demo-index-mob .mold-rgt-bt{ max-width: 20px; }
+    #owl-demo-index-mob .titulo-principal-home { font-size: 18px; }
+
+
+    .titulo-principal-home{ font-size: 25px;  padding: 20px 35px; z-index: 9999999999999999999999; position: relative; }
+    .bloco-titulo-principal-home { /*margin-top: 147px;*/     margin-top: 67px; max-width: 320px;}
+    .img-fundo-home{/* margin-top: 100px; */min-height: 380px; }
+    .img-fundo-home2{/* margin-top: 100px; */min-height: 380px; }
     .icones-sobre-nos{ float: none; display: table; margin: auto; margin-bottom: 15px; }
     .bloco-sobre-nos-mob{ padding: 0px 15px; } 
     .mg-bt-40-mob{ margin-bottom: 40px; }
@@ -499,16 +653,132 @@ filter: FlipV;
         display: table;
         margin: auto;
     }
+    .bloco-destaques-banner {
+        max-width: 330px;
+        width: 100%;
+        height: auto;
+        margin: auto;
+        display: block;
+        position: relative;
+        margin-top: 30px;
+    }
+    .bloco-tel-mob
+    {
+        display: table;
+        width: 100%;
+        /*height: 80px;*/
+        padding: 15px;
+        background-color: #fff;
+        margin-top: 95px;
+        border-top: 1px solid #eee;
+        border-bottom: 1px solid #eee;
+    }
+    .bloco-tel-mob .link-icones-rodape
+    {
+        color: #b10069; 
+    }
+    .img-fundo-sobre-nos{     background-color: #CBCBCB; }
+    .img-fundo-home{ background-color: #000;     height: 240px; }
+    .img-fundo-home2{ background-color: #000;     height: 240px; }
+    .img-fundo-produtos{ background-color: #362124; }
+    .img-fundo-galeria{ background-color: #ECE32A; }
+    .img-fundo-orcamento{ background-color: #000; }
+    .img-fundo-rodape { background-color: #008ABB;}
+    .container-default{ min-width: 340px !important; }
+    #owl-demo-clientes-mob .owl-buttons{ top: -185px !important; }
+    #owl-demo-clientes-mob { top: 50px !important; }
+    #owl-demo-sobre-mob .owl-buttons{ top: -165px !important; }
+    .link-menu-top { margin-top:         0px !important; }
+    .navbar-nav{ padding-top: 40px; }
+    .navbar-brand { height: auto; position: relative; }
+    .link-menu-top{ padding-top:        14px !important; }
+    .bloco-contato-mob
+    {   
+        max-width: 280px;
+        float: none !important;
+        display: table;
+        margin: auto;
+        padding: 0px !important; 
+    }    
+    #owl-demo-index-mob .owl-buttons{     top: -215px; }
+    #owl-demo-index-mob .owl-controls{ height: 5px; }
+    .vitrine-index {
+        max-width: 310px;
+        left: 10px;
+        width: 100%;
+        height: auto;
+        margin: auto;
+        display: block;
+        position: relative;
+        /*margin-top: 30px;*/
+    }
+    .bloco-txt-produto-left{ left: 2%; }
+    .bloco-logo-img-produto{ left: 2%; }
 }
 @media all  and (min-width: 768px) and (max-width: 920px) {
     .img-logo{ max-width:  310px !important; padding: 0px 20px;}
     .link-menu-top{ padding-left: 4px !important; padding-right: 4px !important; }
     .img-fundo-home{ max-height: 400px; }
+    .img-fundo-home2{ max-height: 400px; }
     .bloco-sobre-nos-mob{ padding: 0px 15px; } 
 }
 @media all and (min-width: 768px) {
     .img-fundo-home{ height: 641px; }
+    .img-fundo-home2{ height: 641px; }
     .pd-tp-20-desk{ padding-top: 20px; }
     .img-galeria-meio{ padding-top: 60px; }
     .right-so-dek{ float: right; }
+    .bloco-destaques-banner {
+        max-width: 850px;
+        /*max-width: 1500px !important;*/
+        width: 100%;
+        height: auto;
+        margin: auto;
+        display: block;
+        position: relative;
+        margin-top: 30px;
+        /*overflow: hidden;*/
+    }
+    .vitrine-index {
+        max-width: 100%;
+        margin: auto;
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        overflow: hidden;
+    }
+    .owl-prev{ left: -100px !important; }
+    .owl-next{ right: -100px !important; }
+    .img-fundo-sobre-nos{ background-image: url(../img/sobre-nos.jpg); }
+    .img-fundo-home{ background-image:   url(../img/inove-o-seu-evento.jpg);}
+    .img-fundo-home2
+    {   
+        background-image:   url(../img/foto-instantanea-e-entreterimento.jpg);
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+        background-size: cover !important;
+    }
+    .img-fundo-produtos{ background-image: url(../img/produtos.jpg); }
+    .img-fundo-galeria{ background-image: url(../img/galeria.jpg); }
+    .img-fundo-orcamento{ background-image: url(../img/orcamento.jpg); }
+    .img-fundo-rodape { background-image: url(../img/rodape.jpg); }
+    #owl-demo-index-mob .owl-next{     right: 50px !important; width: 50px; }
+    #owl-demo-index-mob .owl-prev{     left: 50px !important; width: 50px; }
+    #owl-demo-index-mob .owl-buttons{     top: -355px; }
+    #owl-demo-index-mob .owl-controls{ height: 5px; }
+    body { width: 100%; overflow-x: hidden; }
 }
+@media all and (max-width: 380px) {
+/*    .bloco-width-mob
+    {     
+    max-width: 330px !important;
+    margin: auto;
+    position: relative;
+     overflow: hidden; 
+    }*/
+
+   /* .bloco-conteudo {
+        max-width: 310px;
+    }*/
+}
+.testeVai{ /*display: none;*/ font-size: 20px; color: #fff; position: absolute; left: 100%; }

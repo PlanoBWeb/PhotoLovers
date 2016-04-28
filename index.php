@@ -1,6 +1,3 @@
-<?php
-    define(URL, "http://planobweb/clientes/PhotoLovers/Web/");
-?>
 <!DOCTYPE HTML>
 <html lang="pt-br">
 <head>
@@ -10,9 +7,9 @@
     <meta name="robots" content="index, follow">
     <meta name="description" content="" />
     <link href="img/icon-tab.png" rel="icon">
-    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css" media="screen and (min-width: 768px)">
     <link rel="stylesheet" type="text/css" href="css/estilo.css">
-    <title>Photo Like Santos - Cabines de Fotos</title>
+    <title>Photo Lovers - Cabines de Fotos</title>
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -21,21 +18,23 @@
         <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+    <!-- vitrine -->
+    <link rel="stylesheet" type="text/css" href="css/vitrine/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="css/vitrine/owl.theme.css">
+    <link rel="stylesheet" type="text/css" href="css/vitrine/owl.transitions.css">
+    <!-- vitrine -->
   </head>
   <body>
     <div class="container-fluid pd-none">
         <?php include 'inc/header.php'; ?>
-        
         <!-- Home - Efeito de página individual -->
-        <section id="home" class="container-default img-fundo-home bgParallax bgParallax-home" data-speed="15">
+        <?php include 'home.php'; ?>
+       <!--  <section id="home" class="container-default">
             <div class="bloco-conteudo-abs">
-                <div class="bloco-conteudo">
-                    <!-- Página aqui -->
-                    <?php include 'home.php'; ?>
-                    <!-- FIm Página aqui -->
-                </div>
+                <?php //include 'home.php'; ?>
             </div>
-        </section>
+        </section> -->
         <!-- Home - Fim efeito de página individual -->
 
          <!-- Sobre Nos - Efeito de página individual -->
@@ -59,7 +58,50 @@
                     <!-- FIm Página aqui -->
                 </div>
             </div>
+            <section id="produto-espelho" class="container-default container-default-produtos img-fundo-produto-espelho">
+                <div class="bloco-conteudo-abs">
+                    <div class="bloco-conteudo">
+                        <?php include 'produto-espelho.php'; ?>
+                    </div>
+                </div>
+            </section>
+            <section id="produto-cabine-fotos" class="container-default container-default-produtos img-fundo-produto-likesantos">
+                <div class="bloco-conteudo-abs">
+                    <div class="bloco-conteudo">
+                        <?php include 'photo-like-santos.php'; ?>
+                    </div>
+                </div>
+            </section>
+            <section id="produto-cabine-depoimentos" class="container-default container-default-produtos img-fundo-produto-depoimento">
+                <div class="bloco-conteudo-abs">
+                    <div class="bloco-conteudo">
+                        <?php include 'cabine-depoimento.php'; ?>
+                    </div>
+                </div>
+            </section>
+            <section id="produto-photogram" class="container-default container-default-produtos img-fundo-produto-photogram">
+                <div class="bloco-conteudo-abs">
+                    <div class="bloco-conteudo">
+                        <?php include 'photogram.php'; ?>
+                    </div>
+                </div>
+            </section>
+            <!-- <section id="produto-videocrazy" class="container-default container-default-produtos img-fundo-produto-videocrazy">
+                <div class="bloco-conteudo-abs">
+                    <div class="bloco-conteudo">
+                        <?php //include 'videocrazy.php'; ?>
+                    </div>
+                </div>
+            </section> -->
         </section>
+
+        <!-- <section id="produto-espelho" class="container-default img-fundo-produto-espelho">
+            <div class="bloco-conteudo-abs">
+                <div class="bloco-conteudo">
+                    <?php //include 'produto-espelho.php'; ?>
+                </div>
+            </div>
+        </section> -->
         <!-- Fim efeito de página individual -->
 
         <!-- Efeito de página individual -->
@@ -115,7 +157,7 @@
             <div class="bloco-conteudo-abs">
                 <div class="bloco-conteudo">
                     <!-- Página aqui -->
-                    <?php include 'rodape.php'; ?>
+                    <?php include 'footer.php'; ?>
                     <!-- FIm Página aqui -->
                 </div>
             </div>
@@ -124,7 +166,8 @@
         <div class="bloco-direitos">
             <div class="row mg-none">
                 <p class="txt-footer">
-                    PHOTOLOVERS @ COPYRIGHT 2016. TODOS OS DIREITOS RESERVADOS.<br>DESIGNED BY JULIANA ALIA
+                    PHOTOLOVERS @ COPYRIGHT 2016. TODOS OS DIREITOS RESERVADOS.<br>DESIGNED BY JULIANA ALIA<br>
+                    DEVELOPED BY <a href="http://www.planobweb.com.br/" target="_blank">PLANOBWEB</a>
                 </p>
             </div>
         </div>
@@ -134,92 +177,11 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/wow-funcao.js"></script>
-    <script>
-        $('.navbar-nav a').click(function() {
-
-            event.preventDefault();
-            var pagina = $(this).attr("href");
-
-            window.history.pushState("teste", "Title", pagina);
-           
-           switch(pagina){
-                case '#sobre-nos': var p = $(pagina).offset().top;
-                break;
-                case '#produtos': var p = $(pagina).offset().top;
-                break;
-                case '#diferenciais': var p = $(pagina).offset().top;
-                break;
-                case '#home': var p = $(pagina).offset().top;
-                break;
-                case '#clientes': var p = $(pagina).offset().top;
-                break;
-                case '#galeria': var p = $(pagina).offset().top;
-                break;
-                case '#orcamento': var p = $(pagina).offset().top;
-                break;
-           }
-
-            var total = p -  ('+150');
-            $('html, body').animate({
-                scrollTop: total
-            }, 1800);
-
-        });
-
-        $('.bgParallax').each(function(){
-            var $obj = $(this);
-            $(window).scroll(function() {
-                var yPos = -($(window).scrollTop() / $obj.data('speed')); 
-                var bgpos = '50% '+ yPos + 'px';
-                // $obj.css('background-position', bgpos );
-                $('.bgParallax-home').css('background-position', bgpos );
-            }); 
-        });
-
-        // Valida Formulário
-        function enviardados()
-        {
-            d = document.contato;
-
-            if(trim(d.fale_nome.value)=="")
-            {
-                alert("O campo NOME deve ser preenchido!");
-                d.fale_nome.focus();
-                return false;
-            }
-            
-            if(trim(d.fale_email.value)=="")
-            {
-                alert("O campo E-MAIL deve ser preenchido!");
-                d.fale_email.focus();
-                return false;
-            }
-            
-            if(!email(d.fale_email,'')) return false;
-
-            if(trim(d.fale_telefone.value)=="")
-            {
-                alert("O campo TELEFONE deve ser preenchido!");
-                d.fale_telefone.focus();
-                return false;
-            }
-            
-            if(trim(d.fale_msg.value)=="")
-            {
-                alert("O campo MENSAGEM deve ser preenchido!");
-                d.fale_msg.focus();
-                return false;
-            }
-
-            if(trim(d.onde.value)=="" || trim(d.onde.value)== "")
-            {
-                alert("O campo ONDE NOS ENCONTROU deve ser preenchido!");
-                d.onde.focus();
-                return false;
-            }
-            
-            d.submit();
-        }
-    </script>
+    <!-- vitrine -->
+    <script src="js/vitrine/owl.carousel.js"></script>
+    <script src="js/lightbox.js"></script>
+    <!-- vitrine -->
+    <script src="js/funcoes.js"></script>
+    <script src="js/geral.js"></script>
 </body>
 </html>

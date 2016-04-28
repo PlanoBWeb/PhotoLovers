@@ -1,40 +1,57 @@
 <div class="bloco-titulo-principal bloco-titulo-principal-sobre">
-    <img class="pull-left mold-lf-tp" src="img/moldura-sobre-nos-lf-tp.png" alt="INOVE O SEU EVENTO">
-    <img class="pull-right mold-rgt-tp" src="img/moldura-sobre-nos-rgt-tp.png" alt="INOVE O SEU EVENTO">
-    <h1 class="titulo-principal titulo-principal-sobre titulo-principal-galeria pull-left">galeria</h1>
-    <img class="pull-right mold-rgt-bt" src="img/moldura-sobre-nos-rgt-bt.png" alt="INOVE O SEU EVENTO">
-    <img class="pull-left mold-lf-bt" src="img/moldura-sobre-nos-lf-bt.png" alt="INOVE O SEU EVENTO">
+    <img class="pull-left mold-lf-tp" src="img/moldura-sobre-nos-lf-tp.png" alt="galeria" title="galeria">
+    <img class="pull-right mold-rgt-tp" src="img/moldura-sobre-nos-rgt-tp.png" alt="galeria" title="galeria">
+    <h2 class="titulo-principal titulo-principal-sobre titulo-principal-galeria pull-left">galeria</h2>
+    <img class="pull-right mold-rgt-bt" src="img/moldura-sobre-nos-rgt-bt.png" alt="galeria" title="galeria">
+    <img class="pull-left mold-lf-bt" src="img/moldura-sobre-nos-lf-bt.png" alt="galeria" title="galeria">
 </div>
-<div class="row mg-none pd-tp-30 wow bounceInUp" data-wow-duration="2s">
-	<div class="col-xs-12 col-sm-4 col-md-4 mg-bt-40-mob">
-		<a href="" target="_blank">
-			<div class="moldura-foto">
-				<img src="img/img-galeria.jpg" alt="Casal">
-			</div>	
-		</a>
-		<div class="bloco-txt-galeria">
-			<p class="txt-galeria"><a href="" target="_blank">Casamento Alice e Mauro 17.10.15</a></p>
-		</div>
-	</div>	
-	<div class="col-xs-12 col-sm-4 col-md-4 mg-bt-40-mob img-galeria-meio">
-		<a href="" target="_blank">
-			<div class="moldura-foto">
-				<img src="img/img-galeria.jpg" alt="Casal">
-			</div>	
-		</a>
-		<div class="bloco-txt-galeria">
-			<p class="txt-galeria"><a href="" target="_blank">Casamento Alice e Mauro 17.10.15</a></p>
-		</div>
-	</div>	
-	<div class="col-xs-12 col-sm-4 col-md-4 mg-bt-40-mob">
-		<a href="" target="_blank">
-			<div class="moldura-foto">
-				<img src="img/img-galeria.jpg" alt="Casal">
-			</div>	
-		</a>
-		<div class="bloco-txt-galeria">
-			<p class="txt-galeria"><a href="" target="_blank">Casamento Alice e Mauro 17.10.15</a></p>
-		</div>
-	</div>		
-	
+<div class="bloco-destaques-banner pd-bt-30 wow bounceInUp" data-wow-duration="2s">
+    <div id="owl-demo-home" class="services-destaque-home hidden-xs">
+    	<?php //$dados['class']; ?>
+    	<?php 
+    		require_once 'galeria-dados.php';     	
+    	?>
+			<div class="item col-xs-12 col-sm-12 col-md-12 mg-bt-40-mob">
+    		<?php
+    			$totalResultados = count($dadosGaleria);
+				for ($i=1; $i < count($dadosGaleria)+1; $i++) { 
+			?>
+    			<div class="col-xs-12 col-sm-4 col-md-4 <?php if ($i % 2 == 0){ echo "img-galeria-meio"; } ?>">
+				<a href="<?php echo $dadosGaleria[$i]['link']; ?>" target="_blank">
+					<div class="moldura-foto">
+						<img src="img/galeria/<?php echo $dadosGaleria[$i]['imagem']; ?>" alt="<?php echo $dadosGaleria[$i]['titulo']; ?>" title="<?php echo $dadosGaleria[$i]['titulo']; ?>">
+					</div>	
+				</a>
+				<div class="bloco-txt-galeria">
+					<h3 class="txt-galeria"><a href="<?php echo $dadosGaleria[$i]['link']; ?>" target="_blank"><?php echo $dadosGaleria[$i]['titulo']; ?></a></h3>
+				</div>
+				</div>
+			<?php  
+				if ($i == $totalResultados) {
+					echo "</div>";
+				}elseif ($i % 3 == 0) {
+					echo '</div><div class="item col-xs-12 col-sm-12 col-md-12 mg-bt-40-mob">';
+				}
+			?>
+    	<?php
+    		}
+    	?>
+    	</div>
+    </div> 
+    <div class="bloco-destaques-banner pd-bt-30">      
+	    <div id="owl-demo-home-mob" class="services-destaque-home visible-xs-block">    
+	    	<?php for ($i=1; $i < count($dadosGaleria)+1; $i++) {  ?>
+				<div class="item col-xs-12 col-sm-12 col-md-12 mg-bt-40-mob">
+					<a href="<?php echo $dadosGaleria[$i]['link']; ?>" target="_blank">
+						<div class="moldura-foto">
+							<img src="img/galeria/<?php echo $dadosGaleria[$i]['imagem']; ?>" alt="<?php echo $dadosGaleria[$i]['titulo']; ?>" title="<?php echo $dadosGaleria[$i]['titulo']; ?>">
+						</div>	
+					</a>
+					<div class="bloco-txt-galeria">
+						<h3 class="txt-galeria"><a href="<?php echo $dadosGaleria[$i]['link']; ?>" target="_blank"><?php echo $dadosGaleria[$i]['titulo']; ?></a></h3>
+					</div>
+				</div>	
+			<?php } ?>
+	    </div>              
+	</div>              
 </div>
