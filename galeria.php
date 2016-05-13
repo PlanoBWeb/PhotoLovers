@@ -53,5 +53,9 @@
 				</div>	
 			<?php } ?>
 	    </div>              
-	</div>              
+	</div> 
+	<div class="center-block" style="display: table; padding-top: 20px;">
+		<img class="icones-rodape" src="img/icone-facebook.png" alt="facebook.com/photolovers" title="facebook.com/photolovers">
+		<a class="link-icones-rodape" target="_blank" href="https://www.facebook.com/photolovers.fot/?fref=ts">Veja todos os eventos atualizados em nossa fan page</a>
+	</div>             
 </div>

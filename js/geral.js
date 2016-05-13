@@ -115,7 +115,12 @@
             itemsTablet: [767,1], //2 items between 600 and 0
             itemsMobile : 1, // itemsMobile disabled - inherit from itemsTablet option
             slideSpeed : 900,
-            navigation : true
+            // navigation : true
+            navigation : true,
+            slideSpeed : 300,
+            paginationSpeed : 400,
+            singleItem : true,
+            autoPlay : true
         });
      
         // Custom Navigation Events
@@ -156,8 +161,13 @@
             itemsDesktopSmall : [1024,1], // betweem 900px and 601px
             itemsTablet: [767,1], //2 items between 600 and 0
             itemsMobile : 1, // itemsMobile disabled - inherit from itemsTablet option
-            slideSpeed : 900,
-            navigation : true
+            // slideSpeed : 900,
+            navigation : true,
+            slideSpeed : 300,
+            paginationSpeed : 400,
+            singleItem : true,
+            autoPlay : true,
+            autoPlay : 3000
         });
      
         // Custom Navigation Events
@@ -386,4 +396,17 @@
             left: "+=100%"
           }, 1000, function() {});
     });
+
+
+    // $('.open-bloco-img-produto-desc')on("mouseenter", function(){
+    //     $( this ).parent().children(".bloco-img-produto-desc").animate({
+    //         opacity: "1"
+    //       }, 500, function() {});
+    // });
+
+    // $('.bloco-img-produto-desc')on("mouseleave", function(){
+    //     $( this ).animate({
+    //         opacity: "0"
+    //       }, 500, function() {});
+    // });
 

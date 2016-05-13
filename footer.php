@@ -11,11 +11,11 @@
 		</div>
 		<div class="row">
 			<img class="icones-rodape" src="img/icone-celular.png" alt="13997824508" title="13997824508">
-			<a class="link-icones-rodape" href="tel:13997824508">13997824508</a>
+			<a class="link-icones-rodape" href="tel:13997824508">13 99782-4508</a>
 		</div>
 		<div class="row">
 			<img class="icones-rodape" src="img/icone-facebook.png" alt="facebook.com/photolovers" title="facebook.com/photolovers">
-			<a class="link-icones-rodape" target="_blank" href="https://www.facebook.com/photolovers.fot/?fref=ts">facebook.com/photolovers.fot/?fref=ts</a>
+			<a class="link-icones-rodape" target="_blank" href="https://www.facebook.com/photolovers.fot/?fref=ts">facebook.com/photolovers.fot</a>
 		</div>
 		<div class="row">
 			<img class="icones-rodape" src="img/icone-instagran.png" alt="@photolovers.fot" title="@photolovers.fot">

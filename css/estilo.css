@@ -601,7 +601,49 @@ filter: FlipV;
     text-align:         center;
     text-transform:     uppercase;
 }
-
+.bloco-img-produto-desc
+{
+    width:  217px;
+    height: 219px;
+    margin: auto;
+    background: #fff;
+    opacity: 0;
+    position: absolute;
+    display: none;
+    top: 0px;
+    left: 43px;
+    border-radius: 50%;
+    z-index: 9999;
+}
+.link-produto-1:hover  .bloco-img-produto-desc1
+{
+    opacity: 1 !important;
+    display: block;
+}
+.link-produto-2:hover  .bloco-img-produto-desc2
+{
+    opacity: 1 !important;
+    display: block;
+}
+.link-produto-3:hover  .bloco-img-produto-desc3
+{
+    opacity: 1 !important;
+    display: block;
+}
+.link-produto-4:hover  .bloco-img-produto-desc4
+{
+    opacity: 1 !important;
+    display: block;
+    left: 39px;
+}
+.txt-bloco-produto-desc
+{
+    color: #b10069;
+    font-size: 1.25em;
+    font-family: 'DIN-Regular';
+    text-align: center;
+    padding: 75px 0px;
+}
 
 
 

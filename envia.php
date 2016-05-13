@@ -5,7 +5,7 @@
     } else {  
 
         $emailsender = "contato@photolovers.fot.br";
-        $emaildestinatario = "brunno@planobweb.com.br";
+        $emaildestinatario = "contato@photolovers.fot.br";
         $pagina = "Photo Lovers - Contato do site";
 
         $nome = $_POST['nome'];
@@ -21,55 +21,21 @@
         else $quebra_linha = "\n"; //Se "nÃ£o for Windows"
 
         $mensagemHTML = 
-        '
-        <table cellpadding="0" cellspaccing="0" border="0">
-         <tr>
-            <td>
-                <font face="Arial" size="5" color="#000000"><strong>
-                    ORÇAMENTO DO SITE
-                </strong></font><br/>
-            </td>
-         </tr>
-         <tr>
-            <td><img src="http://www.photolovers.fot.br/assinaturas/img/0.gif" width="1" height="10"></td>
-         </tr>
-         <tr>
-            <td colspan="2"><img src="http://www.photolovers.fot.br/assinaturas/img/barra.gif" width="500" height="2"></td>
-         </tr>
-         <tr>
-            <td><img src="http://www.photolovers.fot.br/assinaturas/img/0.gif" width="1" height="10"></td>
-         </tr>
-         <tr>
-            <td align="left"><a href="http://www.photolovers.fot.br/" target="_target"><img src="http://www.photolovers.fot.br/assinaturas/img/photo-lovers.gif" border="0"></a></td>
-         </tr>
-         <tr>
-            <td><img src="http://www.photolovers.fot.br/assinaturas/img/0.gif" width="1" height="60"></td>
-         </tr>
-         <tr>
-            <td>
-                <font face="Arial" size="3" color="#000000">
-        '.
-        'Nome: ' . $nome
-       .'<br/>E-mail: ' . $email
-       .'<br/>Telefone: ' . $telefone
-       .'<br/>Data: ' . $data
-       .'<br/>Público: ' . $publico
-       .'<br/>Onde nos encontrou: '
-       .'<br/>Tipo do evento: '
-       .'<br/>Mensagem: ' . $msg
-       .'
-               </font>
-            </td>
-         </tr>
-        </table>
-       '
+        'Nome: ' . $nome . $quebra_linha 
+       .'E-mail: ' . $email . $quebra_linha
+       .'Telefone: ' . $telefone . $quebra_linha
+       .'Data: ' . $data . $quebra_linha
+       .'Público: ' . $publico . $quebra_linha
+       .'Onde nos encontrou: ' . $onde . $quebra_linha
+       .'Tipo do evento: ' . $tipo . $quebra_linha
+       .'Mensagem: ' . $msg . $quebra_linha
        ; 
 
         $emailEnvia  = "contato@photolovers.fot.br";
-        $comcopia = "contato@planobweb.com.br";
+        $comcopia = "atendimento@planobweb.com.br";
 
         $headers = "MIME-Version: 1.1" .$quebra_linha;
-        $headers .= "Content-type: text/html; charset=UTF-8" .$quebra_linha;
+        $headers .= "Content-type: text/plain; charset=UTF-8" .$quebra_linha;
         $headers .= "From: " . $email.$quebra_linha;
         $headers .= "Bcc: " . $comcopia . $quebra_linha;
         $headers .= "Reply-To: " . $emailEnvia . $quebra_linha;

@@ -25,7 +25,7 @@
 		</div>
 		<div class="row mg-none">
 			<div class="col-xs-12 col-sm-6 col-md-6 pd-none">
-				<input class="field-default field-default-half" type="date" name="data" placeholder="DATA">
+				<input class="field-default field-default-half" type="text" name="data" placeholder="DATA DO EVENTO" onfocus="(this.type='date')"  id="date">
 			</div>		
 			<div class="col-xs-12 col-sm-6 col-md-6 pd-none">
 				<input class="field-default field-default-half right-so-dek" type="number" name="publico" placeholder="PÚBLICO ESTIMADO">
@@ -56,7 +56,7 @@
 			<textarea class="field-default" name="msg" placeholder="MENSAGEM"></textarea>
 		</div>
 		<div class="row mg-none">
-			<input class="pull-left" type="submit" onclick="return enviardados();">
+			<input class="pull-left" type="submit" value="Enviar" onclick="return enviardados();">
 		</div>
 	</form>
 </div>
